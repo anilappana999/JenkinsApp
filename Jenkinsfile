@@ -6,7 +6,7 @@ pipeline {
     stages {
         stage('git repo & clean') {
             steps {
-                sh "rm -rf JenkinsApp1"
+//                 sh "rm -rf JenkinsApp1"
                 sh "git clone https://github.com/Janakkapadiya/JenkinsApp1.git"
                 sh "mvn clean -f JenkinsApp1"
             }
