@@ -1,5 +1,8 @@
 pipeline {
     agent any
+    tools{
+       maven "local_maven"
+    }
     stages {
         stage('git repo & clean') {
             steps {
