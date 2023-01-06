@@ -11,11 +11,11 @@ pipeline {
 //                 sh "mvn clean -f JenkinsApp1"
 //             }
 //         }
-//         stage('install') {
-//             steps {
-//                 sh "mvn install -f JenkinsApp1"
-//             }
-//         }
+        stage('install') {
+            steps {
+                sh "mvn install -f JenkinsApp1"
+            }
+        }
         stage('test') {
             steps {
                 sh "mvn test -f JenkinsApp1"
